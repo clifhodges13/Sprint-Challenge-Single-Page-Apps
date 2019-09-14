@@ -8,6 +8,11 @@ export default function LocationCard({ loc }) {
     margin: 10px;
     padding: 1%;
     border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.6);
+    transition: all .3s ease-out;
+    &:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
   `
   
   return (

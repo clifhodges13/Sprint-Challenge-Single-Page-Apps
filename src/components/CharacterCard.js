@@ -9,10 +9,16 @@ export default function CharacterCard({ char }) {
     padding: 1% 0;
     text-align: center;
     border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.6);
+    transition: all .3s ease-out;
     & img {
       width: 80%;
       height: 80%;
       border-radius: 50%;
+    }
+    &:hover {
+      transform: translateY(-5px) scale(1.02);
     }
   `
 
