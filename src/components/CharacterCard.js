@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+// import { useSpring, animated } from 'react-spring';
 
 export default function CharacterCard({ char }) {
   const StyledCharacterCard = styled.div `
@@ -21,14 +22,20 @@ export default function CharacterCard({ char }) {
       transform: translateY(-5px) scale(1.02);
     }
   `
+  // const props = useSpring({
+  //   opacity: 1,
+  //   from: {opacity: 0}
+  // })
 
   return (
-    <StyledCharacterCard>
-      <img src={char.image} alt={char.name} />
-      <h2>{char.name}</h2>
-      <p>{char.species} / {char.status}</p>
-      <p>Origin: {char.origin.name}</p>
-      <p>Location: {char.location.name}</p>
-    </StyledCharacterCard>
+    // <animated.div style={props} >
+      <StyledCharacterCard>
+        <img src={char.image} alt={char.name} />
+        <h2>{char.name}</h2>
+        <p>{char.species} / {char.status}</p>
+        <p>Origin: {char.origin.name}</p>
+        <p>Location: {char.location.name}</p>
+      </StyledCharacterCard>
+    // </animated.div>
   );
 }

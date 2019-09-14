@@ -34,15 +34,10 @@ export default function TabNav() {
 
   return (
     <StyledNavigation>
-      <NavLink to="./characters">
-        Characters
-      </NavLink>
-      <NavLink to="./locations">
-        Locations
-      </NavLink>
-      <NavLink to="./episodes">
-        Episodes
-        </NavLink>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/characters">Characters</NavLink>
+      <NavLink to="/locations">Locations</NavLink>
+      <NavLink to="/episodes">Episodes</NavLink>
     </StyledNavigation>
   )
 };
