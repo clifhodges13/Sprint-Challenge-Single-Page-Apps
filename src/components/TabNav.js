@@ -11,5 +11,11 @@ import { NavLink } from "react-router-dom";
 // https://react.semantic-ui.com/collections/breadcrumb/
 
 export default function TabNav() {
-
+  return (
+    <>
+      <NavLink to="./characters" className="navLink" activeClassName="activeNavLink">Characters</NavLink>
+      <NavLink to="./locations" className="navLink" activeClassName="activeNavLink">Locations</NavLink>
+      <NavLink to="./episodes" className="navLink" activeClassName="activeNavLink">Episodes</NavLink>
+    </>
+  )
 };

@@ -6,7 +6,7 @@ export default function LocationsList() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get("https://rick-api.herokuapp.com/api/")
+    axios.get("https://rickandmortyapi.com/api/location/")
       .then(res => {
         console.log(res.data.results);
         setData(res.data.results)
